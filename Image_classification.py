@@ -12,3 +12,6 @@ print("Y_train shape", Y_train.shape)
 print("y_test Shape", y_test.shape)
 #Flatting image from 28x28 pixels to 1D 787 pixels
 X_train = X_train.reshape(60000,784)
+X_test = X_test.reshape(10000,784)
+Y_train= Y_train.astype('float32')
+y_test = y_test.astype('float32')
