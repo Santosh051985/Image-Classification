@@ -15,3 +15,5 @@ X_train = X_train.reshape(60000,784)
 X_test = X_test.reshape(10000,784)
 Y_train= Y_train.astype('float32')
 y_test = y_test.astype('float32')
+# Building a linear stack of layers with the sequential model
+model = Sequential()
