@@ -17,3 +17,9 @@ Y_train= Y_train.astype('float32')
 y_test = y_test.astype('float32')
 # Building a linear stack of layers with the sequential model
 model = Sequential()
+# Hidden layer
+model.add(Dense(100,input_shape=(784,),activation='relu'))
+# OutPut Layer
+model.add(Dense(10,activation ='softmax'))
+# looking at model summary
+model.summary()
