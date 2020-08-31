@@ -23,3 +23,7 @@ model.add(Dense(100,input_shape=(784,),activation='relu'))
 model.add(Dense(10,activation ='softmax'))
 # looking at model summary
 model.summary()
+# compiling the sequential model
+model.compile(loss='categorical_crossentropy', metrics=['accuracy'], optimizer='adam')
+# training the model for 10 epochs
+model.fit(X_train, Y_train, batch_size=128, epochs=10, validation_data=(X_test, y_test))
